@@ -1,0 +1,41 @@
+.app-footer {
+  background: var(--color--0);
+  color: var(--color--255);
+}
+
+.app-footer * {
+  color: var(--color--255);
+}
+
+.app-footer-row-1,
+.app-footer-row-2,
+.app-footer-row-3 {
+  padding: 10px 20px;
+}
+
+.app-footer-row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.app-footer-row-1 a {
+  text-decoration: none;
+  display: block;
+  margin: 0 10px;
+}
+
+.app-footer-row-1 a img {
+  width: 32px;
+  transition: transform .3s ease-out;
+}
+
+.app-footer-row-1 a:hover img {
+  transform: scale(1.5);
+}
+
+.app-footer-row-4 {
+  padding: 10px;
+  text-align: center;
+}

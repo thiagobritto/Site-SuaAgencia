@@ -1,0 +1,108 @@
+:root {
+  --app-header-height: 60px;
+}
+
+.app-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  height: var(--app-header-height);
+  background: var(--color--0);
+  box-shadow: 0 0 15px -5px var(--color--0);
+}
+
+.app-header *{
+  color: var(--color--255);
+}
+
+@media screen and (min-width: 768px) {
+  .app-header {
+    justify-content: center;
+  }
+  .app-header-col-1,
+  .app-header-col-2 {
+    display: flex;
+    align-items: center;
+    width: 40%;
+  }
+}
+
+
+.mob-btn-menu {
+  cursor: pointer;
+  color: var(--color--255);
+}
+
+/* app-header-nav */
+
+.app-header-nav {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  transform: translateX(100%);
+  transition: transform .3s;
+}
+
+@media screen and (min-width: 768px) {
+  .app-header-nav {
+    position: static;
+    transform: none;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.app-header-nav-show {
+  transform: translateX(0%);
+}
+
+.mob-nav-overlay {
+  height: 100vh;
+  width: calc(100% - 40%);
+  background: var(--color--0);
+  opacity: 0.6;
+  flex: 1;
+}
+
+.app-header-nav-menu {
+  width: 240px;
+  height: 100%;
+  list-style: none;
+  background: var(--color--255)
+}
+
+.app-header-nav-menu a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color--0);
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-header-nav-menu {
+    width: unset;
+    display: flex;
+    background: transparent;
+  }
+
+  .app-header-nav-menu a {
+    padding: 5px;
+    color: var(--color--255);
+
+  }
+}
+
+.mob-menu-logo a {
+  font-size: 20px;
+  padding: 20px;
+  box-shadow: 0 0 15px -10px #000;
+}

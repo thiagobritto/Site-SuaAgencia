@@ -3,8 +3,29 @@
 .home-newsletter {
   width: 100%;
   height: 80vh;
-  background: url('../images/newsletters-1200.jpg') no-repeat center center / cover;
   padding-top: var(--app-header-height);
+  background-image: url('../images/newsletters-400.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 400px) {
+  .home-newsletter{
+    background-image: url('../images/newsletters-700.webp');
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home-newsletter{
+    background-image: url('../images/newsletters-1024.webp');
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-newsletter{
+    background-image: url('../images/newsletters-1200.webp');
+  }
 }
 
 .home-newsletter-overlay {
@@ -84,7 +105,7 @@
 .home-contents-1-row-1-col-1 {
   height: 300px;
   width: 100%;
-  background: url('../images/meu-negocio-500.jpg') no-repeat center 0 / 100%;
+  background: url('../images/meu-negocio-500.webp') no-repeat center 0 / 100%;
 }
 
 @media screen and (min-width: 768px) {
